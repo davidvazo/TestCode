@@ -1,4 +1,4 @@
-package mx.example.app;
+package mx.codster.examen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -9,8 +9,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan({"mx.example.app.expediente.controller,"
-		+ "mx.example.app.expediente.service"})
+@ComponentScan({"mx.codster.examen.expediente.controller,"
+		+ "mx.codster.examen.expediente.service,"
+		+ "mx.codster.examen.expediente.persistence"})
 public class DemoV1Application extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {

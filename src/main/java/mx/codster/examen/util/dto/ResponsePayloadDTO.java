@@ -1,12 +1,12 @@
-package mx.example.app.util.dto;
+package mx.codster.examen.util.dto;
 
-import mx.example.app.expediente.model.Expediente;
+import mx.codster.examen.expediente.model.Usuario;
 
 public class ResponsePayloadDTO {
 
 	private int codigo;
 	private String mensaje;
-	private Expediente expediente;
+	private Usuario payload;
 	
 	public ResponsePayloadDTO() {}
 
@@ -26,13 +26,13 @@ public class ResponsePayloadDTO {
 		this.mensaje = mensaje;
 	}
 
-	public Expediente getExpediente() {
-		return expediente;
+	public Usuario getPayload() {
+		return payload;
 	}
 
-	public void setExpediente(Expediente expediente) {
-		this.expediente = expediente;
+	public void setPayload(Usuario payload) {
+		this.payload = payload;
 	}
-
+	
 	
 }
