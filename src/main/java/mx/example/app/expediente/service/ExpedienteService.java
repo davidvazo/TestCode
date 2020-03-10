@@ -1,6 +1,6 @@
-package mx.codster.examen.expediente.service;
+package mx.example.app.expediente.service;
 
-import mx.codster.examen.expediente.model.Expediente;
+import mx.example.app.expediente.model.Expediente;
 
 public interface ExpedienteService {
 

@@ -1,32 +1,25 @@
-package mx.codster.examen.expediente.model;
+package mx.example.app.expediente.model;
 
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
- 
-@Entity
-@Table(name = "expediente")
 public class Expediente {
  
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "num_expediente")
     private Integer numExpediente;
  
-    @Column(name = "fecha_ultima_consulta")
-    @Temporal(TemporalType.DATE)
     private Date fechaUltimaConsulta;
  
-    @Column(name = "tipo_sangre")
     private String tipoSangre;
  
+    private String msg;
+    
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+
 	public Integer getNumExpediente() {
 		return numExpediente;
 	}
