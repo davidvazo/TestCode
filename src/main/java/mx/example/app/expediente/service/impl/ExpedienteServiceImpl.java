@@ -24,7 +24,7 @@ public class ExpedienteServiceImpl implements ExpedienteService {
 		Expediente expediente = new Expediente ();
 		expediente.setFechaUltimaConsulta(new Date());
 		expediente.setNumExpediente(numExpediente);
-		expediente.setTipoSangre("A+");
+		expediente.setTipoSangre("B+");
 		expediente.setMsg(msgValue);
 		return expediente;
 	}
