@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Configuration;
 		+ "mx.example.app.expediente.service"})
 public class DemoV1Application extends SpringBootServletInitializer {
 
-	System.out.println("Starting application...");
 	public static void main(String[] args) {
 		SpringApplication.run(DemoV1Application.class, args);
 	}
